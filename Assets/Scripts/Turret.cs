@@ -23,9 +23,6 @@ public class Turret : MonoBehaviour {
     public Transform firePoint;
 
 
-    
-
-
 	// Use this for initialization
 	void Start () {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
@@ -72,7 +69,6 @@ public class Turret : MonoBehaviour {
         {
             Shoot();
             fireCountdown = 1f / fireRate;
-
         }
 
         fireCountdown -= Time.deltaTime;
