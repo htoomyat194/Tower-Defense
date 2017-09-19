@@ -60,12 +60,10 @@ public class Turret : MonoBehaviour {
         {
             return;
         }
-
-        var dir = target.position - transform.position;
-        dir.y = 0;
-        var rotation = Quaternion.LookRotation(dir);
-        rotation *= Quaternion.Euler(0, 180, 0);
-        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * turnSpeed);
+        Vector3 dir = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
+        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
 
         if (fireCountdown <= 0f)
         {
