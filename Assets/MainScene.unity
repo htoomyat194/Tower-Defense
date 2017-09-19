@@ -3160,7 +3160,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 474344532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcdc105b4c89e744ab30102f3aeab412, type: 3}
+  m_Script: {fileID: 11500000, guid: cd40ac0f75418e942bb5c64f2119c0ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &486679890
@@ -3560,6 +3560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 548494401}
   - component: {fileID: 548494400}
+  - component: {fileID: 548494402}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -3575,13 +3576,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 548494399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a8a743931e3c01498c1b96c5197e501, type: 3}
+  m_Script: {fileID: 11500000, guid: 3299cae2cfd3e8446aaf9c71f0a7a37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 4650913891956026, guid: 9ef67d17133513340820de2e8f6640ad,
     type: 2}
   spawnPoint: {fileID: 202365722}
-  timeBetweenWaves: 5.5
+  timeBetweenWaves: 5
   waveCountdownText: {fileID: 1279501904}
 --- !u!4 &548494401
 Transform:
@@ -3596,6 +3597,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &548494402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548494399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b225f63eeb93f4f8e8577d26f4979c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardTurretPrefab: {fileID: 1279093545712870, guid: c87ade75709498048b26fd19a101d708,
+    type: 2}
 --- !u!1001 &560450702
 Prefab:
   m_ObjectHideFlags: 0
@@ -10539,20 +10553,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
