@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4802627831517206}
   - component: {fileID: 33737558627774788}
   - component: {fileID: 23413176599003356}
-  - component: {fileID: 114025174444678690}
+  - component: {fileID: 114407816388223752}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -81,7 +81,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1681718960780672}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114025174444678690
+--- !u!114 &114407816388223752
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
