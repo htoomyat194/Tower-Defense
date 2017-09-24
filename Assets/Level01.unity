@@ -4576,8 +4576,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3299cae2cfd3e8446aaf9c71f0a7a37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4650913891956026, guid: 9ef67d17133513340820de2e8f6640ad,
-    type: 2}
+  waves:
+  - enemy: {fileID: 1677864707995736, guid: 9ef67d17133513340820de2e8f6640ad, type: 2}
+    count: 1
+    rate: 2
+  - enemy: {fileID: 1677864707995736, guid: 9ef67d17133513340820de2e8f6640ad, type: 2}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 1677864707995736, guid: 9ef67d17133513340820de2e8f6640ad, type: 2}
+    count: 5
+    rate: 5
+  - enemy: {fileID: 1677864707995736, guid: 6ce7aa92c67658547ba178ecf2382d43, type: 2}
+    count: 3
+    rate: 1
+  - enemy: {fileID: 1677864707995736, guid: 05a056dac75bd4e42be000058d596e12, type: 2}
+    count: 10
+    rate: 3
   spawnPoint: {fileID: 202365722}
   timeBetweenWaves: 10
   waveCountdownText: {fileID: 1256539494}
@@ -4621,7 +4635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 99999
-  startLives: 10
+  startLives: 1
 --- !u!114 &548494404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9826,7 +9840,7 @@ Prefab:
     - target: {fileID: 224076812221254908, guid: 10b41ddb6ca29ff4e9592a29fa72417b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 462.00928
+      value: 440.52087
       objectReference: {fileID: 0}
     - target: {fileID: 224076812221254908, guid: 10b41ddb6ca29ff4e9592a29fa72417b,
         type: 2}
@@ -10355,7 +10369,7 @@ Prefab:
     - target: {fileID: 224076812221254908, guid: 10b41ddb6ca29ff4e9592a29fa72417b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 264.50928
+      value: 243.02087
       objectReference: {fileID: 0}
     - target: {fileID: 224076812221254908, guid: 10b41ddb6ca29ff4e9592a29fa72417b,
         type: 2}
@@ -12422,7 +12436,7 @@ Prefab:
     - target: {fileID: 224076812221254908, guid: 10b41ddb6ca29ff4e9592a29fa72417b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 364.50928
+      value: 343.02087
       objectReference: {fileID: 0}
     - target: {fileID: 224076812221254908, guid: 10b41ddb6ca29ff4e9592a29fa72417b,
         type: 2}
